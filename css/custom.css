@@ -1,0 +1,449 @@
+/**
+ * IMPORTS
+ * Select the ones you need
+ */
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+/* line 9, /Users/peterbriers/Work/oa/_assets/g_raph_/less/vendor/html5reset.css */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/peterbriers\/Work\/oa\/_assets\/g_raph_\/less\/vendor\/html5reset\.css}line{font-family:\000039}}
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+/* line 30, /Users/peterbriers/Work/oa/_assets/g_raph_/less/vendor/html5reset.css */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/peterbriers\/Work\/oa\/_assets\/g_raph_\/less\/vendor\/html5reset\.css}line{font-family:\0000330}}
+body {
+  line-height: 1;
+}
+/* line 34, /Users/peterbriers/Work/oa/_assets/g_raph_/less/vendor/html5reset.css */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/peterbriers\/Work\/oa\/_assets\/g_raph_\/less\/vendor\/html5reset\.css}line{font-family:\0000334}}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+/* line 39, /Users/peterbriers/Work/oa/_assets/g_raph_/less/vendor/html5reset.css */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/peterbriers\/Work\/oa\/_assets\/g_raph_\/less\/vendor\/html5reset\.css}line{font-family:\0000339}}
+nav ul {
+  list-style: none;
+}
+/* line 43, /Users/peterbriers/Work/oa/_assets/g_raph_/less/vendor/html5reset.css */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/peterbriers\/Work\/oa\/_assets\/g_raph_\/less\/vendor\/html5reset\.css}line{font-family:\0000343}}
+blockquote,
+q {
+  quotes: none;
+}
+/* line 47, /Users/peterbriers/Work/oa/_assets/g_raph_/less/vendor/html5reset.css */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/peterbriers\/Work\/oa\/_assets\/g_raph_\/less\/vendor\/html5reset\.css}line{font-family:\0000347}}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+/* line 53, /Users/peterbriers/Work/oa/_assets/g_raph_/less/vendor/html5reset.css */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/peterbriers\/Work\/oa\/_assets\/g_raph_\/less\/vendor\/html5reset\.css}line{font-family:\0000353}}
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+/* change colours to suit your needs */
+/* line 62, /Users/peterbriers/Work/oa/_assets/g_raph_/less/vendor/html5reset.css */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/peterbriers\/Work\/oa\/_assets\/g_raph_\/less\/vendor\/html5reset\.css}line{font-family:\0000362}}
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+/* change colours to suit your needs */
+/* line 69, /Users/peterbriers/Work/oa/_assets/g_raph_/less/vendor/html5reset.css */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/peterbriers\/Work\/oa\/_assets\/g_raph_\/less\/vendor\/html5reset\.css}line{font-family:\0000369}}
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+/* line 76, /Users/peterbriers/Work/oa/_assets/g_raph_/less/vendor/html5reset.css */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/peterbriers\/Work\/oa\/_assets\/g_raph_\/less\/vendor\/html5reset\.css}line{font-family:\0000376}}
+del {
+  text-decoration: line-through;
+}
+/* line 80, /Users/peterbriers/Work/oa/_assets/g_raph_/less/vendor/html5reset.css */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/peterbriers\/Work\/oa\/_assets\/g_raph_\/less\/vendor\/html5reset\.css}line{font-family:\0000380}}
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+/* line 85, /Users/peterbriers/Work/oa/_assets/g_raph_/less/vendor/html5reset.css */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/peterbriers\/Work\/oa\/_assets\/g_raph_\/less\/vendor\/html5reset\.css}line{font-family:\0000385}}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* change border colour to suit your needs */
+/* line 91, /Users/peterbriers/Work/oa/_assets/g_raph_/less/vendor/html5reset.css */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/peterbriers\/Work\/oa\/_assets\/g_raph_\/less\/vendor\/html5reset\.css}line{font-family:\0000391}}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+/* line 100, /Users/peterbriers/Work/oa/_assets/g_raph_/less/vendor/html5reset.css */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/peterbriers\/Work\/oa\/_assets\/g_raph_\/less\/vendor\/html5reset\.css}line{font-family:\00003100}}
+input,
+select {
+  vertical-align: middle;
+}
+/**
+ * VARIABLES
+ * Prefix variables with semantic meaning:
+ * clr: color
+ * dim: dimension
+ */
+/**
+ * MIXINS
+ * Project specific mixins
+ */
+/**
+ * FONTS
+ */
+/**
+ * DRUPAL BOOTSTRAP
+ * !!! DO NOT MODIFY THIS FILE DIRECTLY.
+ * Please overwrite the selectors in custom.less
+ * Previously known as styleguide. basic styling.
+ */
+/* line 7, /Users/peterbriers/Work/oa/_assets/g_raph_/less/_bootstrap.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/peterbriers\/Work\/oa\/_assets\/g_raph_\/less\/_bootstrap\.less}line{font-family:\000037}}
+a {
+  color: #cc0000;
+  text-decoration: none;
+}
+/* line 10, /Users/peterbriers/Work/oa/_assets/g_raph_/less/_bootstrap.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/peterbriers\/Work\/oa\/_assets\/g_raph_\/less\/_bootstrap\.less}line{font-family:\0000310}}
+a:hover {
+  color: #333;
+}
+/* line 15, /Users/peterbriers/Work/oa/_assets/g_raph_/less/_bootstrap.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/peterbriers\/Work\/oa\/_assets\/g_raph_\/less\/_bootstrap\.less}line{font-family:\0000315}}
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* line 20, /Users/peterbriers/Work/oa/_assets/g_raph_/less/_bootstrap.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/peterbriers\/Work\/oa\/_assets\/g_raph_\/less\/_bootstrap\.less}line{font-family:\0000320}}
+h1 {
+  font-size: 28px;
+}
+/* line 24, /Users/peterbriers/Work/oa/_assets/g_raph_/less/_bootstrap.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/peterbriers\/Work\/oa\/_assets\/g_raph_\/less\/_bootstrap\.less}line{font-family:\0000324}}
+h2 {
+  font-size: 20px;
+}
+/* line 28, /Users/peterbriers/Work/oa/_assets/g_raph_/less/_bootstrap.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/peterbriers\/Work\/oa\/_assets\/g_raph_\/less\/_bootstrap\.less}line{font-family:\0000328}}
+h3 {
+  font-size: 16px;
+}
+/* line 32, /Users/peterbriers/Work/oa/_assets/g_raph_/less/_bootstrap.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/peterbriers\/Work\/oa\/_assets\/g_raph_\/less\/_bootstrap\.less}line{font-family:\0000332}}
+div.messages {
+  margin: 0 0 30px;
+  border: none;
+  padding: 15px 0;
+  border-radius: 4px;
+  background-image: none;
+  text-align: center;
+}
+/* line 44, /Users/peterbriers/Work/oa/_assets/g_raph_/less/_bootstrap.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/peterbriers\/Work\/oa\/_assets\/g_raph_\/less\/_bootstrap\.less}line{font-family:\0000344}}
+.node-readmore a,
+.more-link a,
+.field-name-node-link a {
+  color: white;
+  background: #cc0000;
+  border-radius: 4px;
+  padding: 2px 7px;
+  margin: 0;
+  font-size: 11px;
+}
+/* line 51, /Users/peterbriers/Work/oa/_assets/g_raph_/less/_bootstrap.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/peterbriers\/Work\/oa\/_assets\/g_raph_\/less\/_bootstrap\.less}line{font-family:\0000351}}
+.node-readmore a:hover,
+.more-link a:hover,
+.field-name-node-link a:hover {
+  background: #404040;
+}
+/* line 57, /Users/peterbriers/Work/oa/_assets/g_raph_/less/_bootstrap.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/peterbriers\/Work\/oa\/_assets\/g_raph_\/less\/_bootstrap\.less}line{font-family:\0000357}}
+#breadcrumb {
+  margin: 0 0 30px;
+  clear: both;
+}
+/* line 60, /Users/peterbriers/Work/oa/_assets/g_raph_/less/_bootstrap.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/peterbriers\/Work\/oa\/_assets\/g_raph_\/less\/_bootstrap\.less}line{font-family:\0000360}}
+#breadcrumb #breadcrumb-inner {
+  width: 100%;
+  max-width: 940px;
+  margin: 0 auto;
+}
+/* line 64, /Users/peterbriers/Work/oa/_assets/g_raph_/less/_bootstrap.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/peterbriers\/Work\/oa\/_assets\/g_raph_\/less\/_bootstrap\.less}line{font-family:\0000364}}
+#breadcrumb #breadcrumb-inner a {
+  color: #fff;
+}
+/* line 66, /Users/peterbriers/Work/oa/_assets/g_raph_/less/_bootstrap.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/peterbriers\/Work\/oa\/_assets\/g_raph_\/less\/_bootstrap\.less}line{font-family:\0000366}}
+#breadcrumb #breadcrumb-inner a:hover {
+  color: #404040;
+}
+/* line 73, /Users/peterbriers/Work/oa/_assets/g_raph_/less/_bootstrap.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/peterbriers\/Work\/oa\/_assets\/g_raph_\/less\/_bootstrap\.less}line{font-family:\0000373}}
+.field .field-label {
+  font-weight: normal;
+  text-transform: uppercase;
+}
+/* line 78, /Users/peterbriers/Work/oa/_assets/g_raph_/less/_bootstrap.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/peterbriers\/Work\/oa\/_assets\/g_raph_\/less\/_bootstrap\.less}line{font-family:\0000378}}
+label {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #bbb;
+  font-weight: 400;
+}
+/* line 86, /Users/peterbriers/Work/oa/_assets/g_raph_/less/_bootstrap.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/peterbriers\/Work\/oa\/_assets\/g_raph_\/less\/_bootstrap\.less}line{font-family:\0000386}}
+input.form-text {
+  padding: 6px;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid #eee;
+}
+/* line 94, /Users/peterbriers/Work/oa/_assets/g_raph_/less/_bootstrap.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/peterbriers\/Work\/oa\/_assets\/g_raph_\/less\/_bootstrap\.less}line{font-family:\0000394}}
+.tabs {
+  clear: both;
+  margin: 30px 0;
+  position: relative;
+  z-index: 5;
+}
+/* line 99, /Users/peterbriers/Work/oa/_assets/g_raph_/less/_bootstrap.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/peterbriers\/Work\/oa\/_assets\/g_raph_\/less\/_bootstrap\.less}line{font-family:\0000399}}
+.tabs > ul {
+  background: none;
+  padding: 0;
+  width: 100%;
+  border: none;
+}
+/* line 104, /Users/peterbriers/Work/oa/_assets/g_raph_/less/_bootstrap.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/peterbriers\/Work\/oa\/_assets\/g_raph_\/less\/_bootstrap\.less}line{font-family:\00003104}}
+.tabs > ul li {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  float: none;
+}
+/* line 110, /Users/peterbriers/Work/oa/_assets/g_raph_/less/_bootstrap.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/peterbriers\/Work\/oa\/_assets\/g_raph_\/less\/_bootstrap\.less}line{font-family:\00003110}}
+.tabs > ul li.active a {
+  background: #cc0000;
+  position: relative;
+  border: none;
+  color: #fff;
+  padding: 5px 10px;
+}
+/* line 116, /Users/peterbriers/Work/oa/_assets/g_raph_/less/_bootstrap.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/peterbriers\/Work\/oa\/_assets\/g_raph_\/less\/_bootstrap\.less}line{font-family:\00003116}}
+.tabs > ul li.active a:after {
+  content: "";
+  position: absolute;
+  bottom: -16px;
+  left: 50%;
+  margin-left: -8px;
+  border-top: 8px solid #cc0000;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+}
+/* line 129, /Users/peterbriers/Work/oa/_assets/g_raph_/less/_bootstrap.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/peterbriers\/Work\/oa\/_assets\/g_raph_\/less\/_bootstrap\.less}line{font-family:\00003129}}
+.tabs > ul li a {
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  border: none;
+  color: #333;
+  padding: 5px 10px;
+}
+/* line 136, /Users/peterbriers/Work/oa/_assets/g_raph_/less/_bootstrap.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/peterbriers\/Work\/oa\/_assets\/g_raph_\/less\/_bootstrap\.less}line{font-family:\00003136}}
+.tabs > ul li a.active {
+  background: #cc0000;
+  color: #fff;
+  position: relative;
+}
+/* line 140, /Users/peterbriers/Work/oa/_assets/g_raph_/less/_bootstrap.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/peterbriers\/Work\/oa\/_assets\/g_raph_\/less\/_bootstrap\.less}line{font-family:\00003140}}
+.tabs > ul li a.active:hover {
+  background: #cc0000;
+}
+/* line 143, /Users/peterbriers/Work/oa/_assets/g_raph_/less/_bootstrap.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/peterbriers\/Work\/oa\/_assets\/g_raph_\/less\/_bootstrap\.less}line{font-family:\00003143}}
+.tabs > ul li a.active:after {
+  content: "";
+  position: absolute;
+  bottom: -16px;
+  left: 50%;
+  margin-left: -8px;
+  border-top: 8px solid #cc0000;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+}
+/* line 155, /Users/peterbriers/Work/oa/_assets/g_raph_/less/_bootstrap.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/peterbriers\/Work\/oa\/_assets\/g_raph_\/less\/_bootstrap\.less}line{font-family:\00003155}}
+.tabs > ul li a:hover {
+  background: #333;
+  color: #fff;
+}
+/* line 164, /Users/peterbriers/Work/oa/_assets/g_raph_/less/_bootstrap.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/peterbriers\/Work\/oa\/_assets\/g_raph_\/less\/_bootstrap\.less}line{font-family:\00003164}}
+.outerbox {
+  padding: 20px 0;
+}
+/**
+ * BASIC STYLING
+ */
+/**
+ * RESPONSIVENESS
+ * Maybe not all are needed. Uncomment as you wish
+ */
+/**
+ * Desktops
+ */
+@media screen and (max-width: 740px) {
+  /* line 6, /Users/peterbriers/Work/oa/_assets/g_raph_/less/_responsive-lg.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/peterbriers\/Work\/oa\/_assets\/g_raph_\/less\/_responsive-lg\.less}line{font-family:\000036}}
+  .inner {
+    width: 88%;
+    margin: 0 auto;
+  }
+}
+/**
+ * RESPONSIVE: MEDIUM WIDTH
+ */
+@media screen and (max-width: 740px) {
+  /* line 6, /Users/peterbriers/Work/oa/_assets/g_raph_/less/_responsive-md.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/peterbriers\/Work\/oa\/_assets\/g_raph_\/less\/_responsive-md\.less}line{font-family:\000036}}
+  .inner {
+    width: 88%;
+    margin: 0 auto;
+  }
+}
+/**
+ * Desktop / Tablet version
+ */
+@media screen and (min-width: 740px) and (max-width: 980px) {
+  /* line 7, /Users/peterbriers/Work/oa/_assets/g_raph_/less/_responsive-sm.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/peterbriers\/Work\/oa\/_assets\/g_raph_\/less\/_responsive-sm\.less}line{font-family:\000037}}
+  .inner {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+}

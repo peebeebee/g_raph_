@@ -1,0 +1,13 @@
+{
+    "name" : "graph",
+    "version" : "0.0.1",
+    "author" : "Peter Briers",
+    "private" : true,
+
+    "devDependencies" : {
+        "grunt" : "~0.4.2",
+        "matchdep": "*",
+        "grunt-contrib-less" : "latest",
+        "grunt-contrib-watch" : "latest"
+    }
+}
