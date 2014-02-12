@@ -1,21 +1,19 @@
 # Drupal Base Theme for One-Agency
 
-## How to use it
+> Authors:
+>   G-raph - <http://g-raph.be/>
+>   Peter Briers - <http://peterbriers.be>
 
+## Dependencies
+1. Node.js (<http://nodejs.org/download>)
+2. Grunt (<http://gruntjs.com/getting-started>)
+
+## Bootstrapping
 1. Rename the folder and .info-file according to your theme's name
 2. Edit the .info-file (name & description)
 3. Edit the template.php file and rename the oa_ functions according to your theme's name
-4. That's it!
+4. Type `npm install` in the console (from within the theme folder)
+4. Type `grunt watch` in the console (from within the theme folder)
 
-## About the stylesheets
-
-### Lib vs Vendor
-The files in css/vendor and css/lib should never be altered.
-Files inside css/vendor are 3rd party content
-Files inside css/lib is g_raph_'s basic libraries to help you on your way.
-
-### Responsiveness
-(todo)
-
-### Using .less
-(todo)
+## On the stylesheets
+This theme uses Less (<http://lesscss.org/>) for styling.
