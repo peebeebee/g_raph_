@@ -1,8 +1,8 @@
 # Drupal Base Theme for One-Agency
 
 > Authors:
->   G-raph - <http://g-raph.be/>
->   Peter Briers - <http://peterbriers.be>
+> - G-raph - <http://g-raph.be/>
+> - Peter Briers - <http://peterbriers.be>
 
 ## Dependencies
 1. Node.js (<http://nodejs.org/download>)
