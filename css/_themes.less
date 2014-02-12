@@ -1,0 +1,33 @@
+/**
+ * THEMES
+ * This is very handy when you want a site with multiple themes
+ * Per theme you can set your variables
+ */
+
+// SET YOUR THEME VARIABLES
+.theme(1) {
+  @clr-body: #ff0000;
+}
+
+.theme(2) {
+  @clr-body: #00ff00;
+}
+
+.theme(3) {
+  @clr-body: #0000ff;
+}
+
+// BUILD YOUR THEME
+// Set the @index for the amout of themes (+1)
+.buildThemes(@index) when (@index < 4) {
+  .theme-@{index} {
+    .theme(@index);
+    // Write theme specific stuff
+    body {
+      background-color: @clr-body;
+    }
+    // End theme specific stuff
+  }
+  .buildThemes(@index + 1);
+}
+.buildThemes(1);
