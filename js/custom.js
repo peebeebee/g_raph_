@@ -2,7 +2,6 @@
   Drupal.behaviors.theming = {
     attach: function (context, settings) {
 
-      
 
     }
   };

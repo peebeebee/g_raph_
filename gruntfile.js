@@ -28,6 +28,9 @@ module.exports = function(grunt) {
         }]
       }
     },
+    jshint: {
+      all: ['gruntfile.js', 'js/**/*.js']
+    },
     watch: {
       options: {
         livereload: true,
@@ -39,6 +42,10 @@ module.exports = function(grunt) {
       imagemin: {
         files: ['images/**/*.*'],
         tasks: ['imagemin']
+      },
+      jshint: {
+        files: ['gruntfile.js', 'js/**/*.js'],
+        tasks: ['jshint']
       }
     }
   });
