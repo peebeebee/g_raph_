@@ -15,10 +15,30 @@ module.exports = function(grunt) {
         }
       }
     },
+    imagemin: {
+      dynamic: {
+        options: {
+          pngquant: true
+        },
+        files: [{
+          expand: true,
+          cwd: 'images/',
+          src: ['**/*.{png,jpg,gif}'],
+          dest: 'images/'
+        }]
+      }
+    },
     watch: {
-      lesss: {
+      options: {
+        livereload: true,
+      },
+      less: {
         files: ['less/**/*.*'],
         tasks: ['less']
+      },
+      imagemin: {
+        files: ['images/**/*.*'],
+        tasks: ['imagemin']
       }
     }
   });

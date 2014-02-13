@@ -8,6 +8,7 @@
         "grunt" : "~0.4.2",
         "matchdep": "*",
         "grunt-contrib-less" : "latest",
-        "grunt-contrib-watch" : "latest"
+        "grunt-contrib-watch" : "latest",
+        "grunt-contrib-imagemin" : "latest"
     }
 }
