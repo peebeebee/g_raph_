@@ -8,7 +8,10 @@ module.exports = function(grunt) {
       build: {
         options: {
           dumpLineNumbers: "all",
-          strictImports: true
+          strictImports: true,
+          sourceMap: true,
+          sourceMapFilename: 'css/custom.css.map',
+          sourceMapRootpath: '../'
         },
         files: {
           "css/custom.css": "less/custom.less"
