@@ -409,11 +409,6 @@ input.form-text {
 /**
  * BASIC STYLING
  */
-/* line 19, /Users/peterbriers/Work/oa/test/sites/all/themes/g_raph_/less/custom.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/peterbriers\/Work\/oa\/test\/sites\/all\/themes\/g_raph_\/less\/custom\.less}line{font-family:\0000319}}
-body {
-  background-color: #f00;
-}
 /**
  * RESPONSIVENESS
  * Maybe not all are needed. Uncomment as you wish
