@@ -659,11 +659,6 @@ input.form-text {
   background: #333;
   color: #fff;
 }
-/* line 163, /Users/peterbriers/Work/oa/test/sites/all/themes/g_raph_/less/_bootstrap.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/peterbriers\/Work\/oa\/test\/sites\/all\/themes\/g_raph_\/less\/_bootstrap\.less}line{font-family:\00003163}}
-.outerbox {
-  padding: 20px 0;
-}
 /**
  * BASIC STYLING
  */
