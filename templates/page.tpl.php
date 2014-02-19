@@ -88,7 +88,6 @@
             </h1>
           <?php endif; ?>
         <?php endif; ?>
-
         <?php if ($site_slogan): ?>
           <div id="site-slogan"><?php print $site_slogan; ?></div>
         <?php endif; ?>
@@ -127,7 +126,7 @@
 </div>
 <div id="preface-bottom" class="outerbox">
   <div id="preface-bottom-inner" class="inner clearfix">
-      <?php print render($page['preface_bottom']); ?>      
+      <?php print render($page['preface_bottom']); ?>
   </div>
 </div>
 <!-- content -->

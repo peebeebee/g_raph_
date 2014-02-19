@@ -194,6 +194,8 @@ select {
  * Prefix variables with semantic meaning:
  * clr: color
  * dim: dimension
+ * res: resolution/responsive
+ * ...
  */
 /**
  * MIXINS
@@ -411,23 +413,14 @@ input.form-text {
  */
 /**
  * RESPONSIVENESS
- * Maybe not all are needed. Uncomment as you wish
  */
 /**
- * Desktops
+ * RESPONSIVE: LARGE
  */
-@media screen and (max-width: 740px) {
-  /* line 6, /Users/peterbriers/Work/oa/test/sites/all/themes/g_raph_/less/_responsive-lg.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/peterbriers\/Work\/oa\/test\/sites\/all\/themes\/g_raph_\/less\/_responsive-lg\.less}line{font-family:\000036}}
-  .inner {
-    width: 88%;
-    margin: 0 auto;
-  }
-}
 /**
- * RESPONSIVE: MEDIUM WIDTH
+ * RESPONSIVE: MEDIUM
  */
-@media screen and (max-width: 740px) {
+@media screen and (min-width: 768px) {
   /* line 6, /Users/peterbriers/Work/oa/test/sites/all/themes/g_raph_/less/_responsive-md.less */
   @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/peterbriers\/Work\/oa\/test\/sites\/all\/themes\/g_raph_\/less\/_responsive-md\.less}line{font-family:\000036}}
   .inner {
@@ -436,14 +429,13 @@ input.form-text {
   }
 }
 /**
- * Desktop / Tablet version
+ * RESPONSIVE: SMALL
  */
-@media screen and (min-width: 740px) and (max-width: 980px) {
-  /* line 7, /Users/peterbriers/Work/oa/test/sites/all/themes/g_raph_/less/_responsive-sm.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/peterbriers\/Work\/oa\/test\/sites\/all\/themes\/g_raph_\/less\/_responsive-sm\.less}line{font-family:\000037}}
+@media screen and (min-width: 480px) {
+  /* line 6, /Users/peterbriers/Work/oa/test/sites/all/themes/g_raph_/less/_responsive-sm.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/peterbriers\/Work\/oa\/test\/sites\/all\/themes\/g_raph_\/less\/_responsive-sm\.less}line{font-family:\000036}}
   .inner {
     width: 100%;
-    max-width: 700px;
     margin: 0 auto;
   }
 }
