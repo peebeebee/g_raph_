@@ -5,7 +5,7 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     less: {
-      build: {
+      local: {
         options: {
           dumpLineNumbers: "all",
           strictImports: true,
@@ -19,7 +19,7 @@ module.exports = function(grunt) {
       }
     },
     imagemin: {
-      dynamic: {
+      local: {
         options: {
           pngquant: true
         },
@@ -32,27 +32,38 @@ module.exports = function(grunt) {
       }
     },
     jshint: {
-      all: ['gruntfile.js', 'js/**/*.js']
+      all: ['gruntfile.js', 'js/*.js']
+    },
+    autoprefixer: {
+      local: {
+        options: {
+          // Task-specific options go here.
+          // @see: https://github.com/ai/autoprefixer#browsers
+          browsers: ['last 5 version', 'ie 8', 'ie 9'],
+          map: true
+        },
+        src: 'css/custom.css',
+      }
     },
     watch: {
-      options: {
-        livereload: true,
-      },
-      less: {
+      styles: {
         files: ['less/**/*.*'],
-        tasks: ['less']
+        tasks: ['less', 'autoprefixer']
       },
-      imagemin: {
+      images: {
         files: ['images/**/*.*'],
         tasks: ['imagemin']
       },
-      jshint: {
+      scripts: {
         files: ['gruntfile.js', 'js/**/*.js'],
         tasks: ['jshint']
+      },
+      options: {
+        livereload: true,
       }
     }
   });
 
-  grunt.registerTask('default', []);
+  grunt.registerTask('default', ['less', 'imagemin', 'jshint', 'autoprefixer']);
 
 };

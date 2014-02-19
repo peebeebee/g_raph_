@@ -4,6 +4,17 @@
  * Please overwrite the selectors in custom.less
  * Previously known as styleguide. basic styling.
  */
+
+html { font-size: 62.5% }
+body {
+  font-family: @font-body;
+  font-size: 1.6em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: @font-heading;
+}
+
 a {
   color: @clr-link;
   text-decoration: none;
@@ -15,18 +26,6 @@ a {
 img {
   max-width: 100%;
   height: auto;
-}
-
-h1 {
-  font-size: 28px;
-}
-
-h2 {
-  font-size: 20px;
-}
-
-h3 {
-  font-size: 16px;
 }
 
 div.messages {
