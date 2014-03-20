@@ -4,17 +4,17 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
-    less: {
+    sass: {
       local: {
         options: {
-          dumpLineNumbers: "all",
-          strictImports: true,
-          sourceMap: true,
-          sourceMapFilename: 'css/custom.css.map',
-          sourceMapRootpath: '../'
+          sourcemap: true,
+          unixNewlines: true,
+          style: 'expanded',
+          lineNumbers: true,
+          quiet: true
         },
         files: {
-          "css/custom.css": "less/custom.less"
+          'css/custom.css': 'sass/custom.scss'
         }
       }
     },
@@ -42,13 +42,13 @@ module.exports = function(grunt) {
           browsers: ['last 5 version', 'ie 8', 'ie 9'],
           map: true
         },
-        src: 'css/custom.css',
+        src: 'css/custom.css'
       }
     },
     watch: {
       styles: {
-        files: ['less/**/*.*'],
-        tasks: ['less', 'autoprefixer']
+        files: ['sass/**/*.*'],
+        tasks: ['sass', 'autoprefixer']
       },
       images: {
         files: ['images/**/*.*'],
@@ -59,11 +59,11 @@ module.exports = function(grunt) {
         tasks: ['jshint']
       },
       options: {
-        livereload: true,
+        livereload: true
       }
     }
   });
 
-  grunt.registerTask('default', ['less', 'imagemin', 'jshint', 'autoprefixer']);
+  grunt.registerTask('default', ['sass', 'imagemin', 'jshint', 'autoprefixer']);
 
 };

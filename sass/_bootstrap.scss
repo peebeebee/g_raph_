@@ -7,16 +7,16 @@
 
 html { font-size: 62.5% }
 body {
-  font-family: @font-body;
+  font-family: $font-body;
   font-size: 1.6em;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: @font-heading;
+  font-family: $font-heading;
 }
 
 a {
-  color: @clr-link;
+  color: $clr-link;
   text-decoration: none;
   &:hover {
     color: #333;
@@ -42,7 +42,7 @@ div.messages {
 .field-name-node-link {
   a {
     color: white;
-    background: @clr-link;
+    background: $clr-link;
     border-radius: 4px;
     padding: 2px 7px;
     margin: 0;
@@ -107,7 +107,7 @@ input {
       float: none;
       &.active {
         a {
-          background: @clr-link;
+          background: $clr-link;
           position: relative;
           border: none;
           color: #fff;
@@ -118,7 +118,7 @@ input {
             bottom: -16px;
             left: 50%;
             margin-left: -8px;
-            border-top: 8px solid @clr-link;
+            border-top: 8px solid $clr-link;
             border-left: 8px solid transparent;
             border-right: 8px solid transparent;
             border-bottom: 8px solid transparent;
@@ -133,11 +133,11 @@ input {
         color: #333;
         padding: 5px 10px;
         &.active {
-          background: @clr-link;
+          background: $clr-link;
           color: #fff;
           position: relative;
           &:hover {
-            background: @clr-link;
+            background: $clr-link;
           }
           &:after {
             content: "";
@@ -145,7 +145,7 @@ input {
             bottom: -16px;
             left: 50%;
             margin-left: -8px;
-            border-top: 8px solid @clr-link;
+            border-top: 8px solid $clr-link;
             border-left: 8px solid transparent;
             border-right: 8px solid transparent;
             border-bottom: 8px solid transparent;

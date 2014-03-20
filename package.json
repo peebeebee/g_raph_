@@ -7,7 +7,7 @@
     "devDependencies" : {
         "grunt" : "~0.4.2",
         "matchdep": "*",
-        "grunt-contrib-less" : "latest",
+        "grunt-contrib-sass" : "latest",
         "grunt-contrib-watch" : "latest",
         "grunt-contrib-imagemin" : "latest",
         "grunt-contrib-jshint" : "latest",

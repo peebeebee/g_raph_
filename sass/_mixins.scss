@@ -2,7 +2,7 @@
  * MIXINS
  * Project specific mixins
  */
-.clearfix() {
+@mixin clearfix() {
     /* For modern browsers */
   &:before,
   &:after {

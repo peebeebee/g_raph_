@@ -5,29 +5,36 @@
  */
 
 // SET YOUR THEME VARIABLES
-.theme(1) {
-  @clr-body: #ff0000;
-}
+@mixin theme($index) {
+  // Theme 1
+  @if 1 == $index
+  {
+    $clr-body: #ff0000;
+  }
+  // Theme 2
+  @if 2 == $index
+  {
+    $clr-body: #00ff00;
+  }
+  // Theme 3
+  @if 3 == $index
+  {
+    $clr-body: #0000ff;
+  }
 
-.theme(2) {
-  @clr-body: #00ff00;
-}
+  // Write theme specific stuff
+  .theme-#{$index} {
+    body {
+      background-color: $clr-body;
+    }
+  }
+  // End theme specific stuff
 
-.theme(3) {
-  @clr-body: #0000ff;
 }
 
 // BUILD YOUR THEME
 // Set the @index for the amout of themes (+1)
-.buildThemes(@index) when (@index < 4) {
-  .theme-@{index} {
-    .theme(@index);
-    // Write theme specific stuff
-    body {
-      background-color: @clr-body;
-    }
-    // End theme specific stuff
-  }
-  .buildThemes(@index + 1);
+@for $index from 1 through 3 {
+  @include theme($index);
 }
-.buildThemes(1);
+

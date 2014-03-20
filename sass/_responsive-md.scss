@@ -1,7 +1,7 @@
 /**
  * RESPONSIVE: MEDIUM
  */
-@media screen and (min-width: @res-md) {
+@media screen and (min-width: $res-md) {
 
   .inner {
     width: 88%;
