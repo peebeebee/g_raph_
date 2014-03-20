@@ -3,6 +3,7 @@
 ## Dependencies
 1. Node.js (<http://nodejs.org/download>)
 2. Grunt (<http://gruntjs.com/getting-started>)
+3. Sass > 3.3.0 (`gem update sass`)
 
 ## Installation
 1. Rename the folder and .info-file according to your theme's name
@@ -12,11 +13,11 @@
 4. Type `grunt watch` in the console (from within the theme folder)
 
 ## On the stylesheets
-This theme uses Less (<http://lesscss.org/>) for styling.
+This theme uses Sass (<http://sass-lang.com>) for styling.
 
 ## On Grunt automation
 Grunt uses the following tasks:
- - Less compiler with css mapping!
+ - Sass compiler with css mapping!
  - CSS postprefixer (for cross-browser stuff)
  - Image optimalisation
  - JS Lint
