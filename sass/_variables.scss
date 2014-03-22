@@ -7,6 +7,8 @@
  * ...
  */
 
+$ie-lt8: false; // If less than Internet Explorer 8
+
 $clr-body:       #ffffff;
 $clr-link:       #cc0000;
 $clr-link-hover: #ff0000;
@@ -19,4 +21,4 @@ $res-lg: 980px;
 $res-md: 768px;
 $res-sm: 480px;
 
-$dim-something: 1020px;
+

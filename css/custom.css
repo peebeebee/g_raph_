@@ -449,7 +449,6 @@ th {
  */
 /**
  * MIXINS
- * Project specific mixins
  */
 /**
  * FONTS
@@ -652,7 +651,7 @@ input.form-text {
 /**
  * RESPONSIVE: MEDIUM
  */
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   /* line 6, ../sass/_responsive-md.scss */
   .inner {
     width: 88%;
@@ -662,7 +661,7 @@ input.form-text {
 /**
  * RESPONSIVE: SMALL
  */
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   /* line 6, ../sass/_responsive-sm.scss */
   .inner {
     width: 100%;

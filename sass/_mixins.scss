@@ -1,17 +1,75 @@
 /**
  * MIXINS
- * Project specific mixins
  */
+
+
+
+// ======
+// BASICS
+// ======
+
 @mixin clearfix() {
-    /* For modern browsers */
+  /* For modern browsers */
   &:before,
   &:after {
-      content:"";
-      display:table;
+    content:"";
+    display:table;
   }
   &:after {
-      clear:both;
+    clear:both;
   }
-  /* For IE 6/7 (trigger hasLayout) */
-  zoom:1;
+  @if $ie-lt8 { /* For IE 6/7 (trigger hasLayout) */
+    zoom:1;
+  }
+}
+
+// ======
+// DRUPAL
+// ======
+
+// HORIZONTAL LIST (FLOAT)
+@mixin menu-horizontal($margin: 5px, $direction: left) {
+  li.leaf {
+    list-style: none;
+    float: $direction;
+    margin-left: $margin;
+    margin-right: $margin;
+    @if $direction == right {
+      &.first { margin-right: 0; }
+      &.last  { margin-left: 0; }
+    }
+    @else {
+      &.first { margin-left: 0; }
+      &.last  { margin-right: 0; }
+    }
+  }
+}
+// RESET MENU STYLE
+@mixin menu-nostyle() {
+  li.expanded,
+  li.leaf {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+}
+
+// ==========
+// RESPONSIVE
+// ==========
+
+@mixin lg {
+  @media screen and (max-width: $res-lg) {
+    @content;
+  }
+}
+@mixin md {
+  @media screen and (max-width: $res-md) {
+    @content;
+  }
+}
+@mixin sm {
+  @media screen and (max-width: $res-sm) {
+    @content;
+  }
 }

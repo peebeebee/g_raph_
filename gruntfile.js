@@ -64,6 +64,8 @@ module.exports = function(grunt) {
     }
   });
 
-  grunt.registerTask('default', ['sass', 'imagemin', 'jshint', 'autoprefixer']);
+  grunt.registerTask('default', ['sass', 'imagemin', 'autoprefixer']);
+  grunt.registerTask('css', ['sass', 'autoprefixer'] );
+  grunt.registerTask('js', ['jshint', 'autoprefixer'] );
 
 };
