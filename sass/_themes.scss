@@ -1,0 +1,40 @@
+/**
+ * THEMES
+ * This is very handy when you want a site with multiple themes
+ * Per theme you can set your variables
+ */
+
+// SET YOUR THEME VARIABLES
+@mixin theme($index) {
+  // Theme 1
+  @if 1 == $index
+  {
+    $clr-body: #ff0000;
+  }
+  // Theme 2
+  @if 2 == $index
+  {
+    $clr-body: #00ff00;
+  }
+  // Theme 3
+  @if 3 == $index
+  {
+    $clr-body: #0000ff;
+  }
+
+  // Write theme specific stuff
+  .theme-#{$index} {
+    body {
+      background-color: $clr-body;
+    }
+  }
+  // End theme specific stuff
+
+}
+
+// BUILD YOUR THEME
+// Set the @index for the amout of themes (+1)
+@for $index from 1 through 3 {
+  @include theme($index);
+}
+
