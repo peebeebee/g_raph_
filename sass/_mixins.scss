@@ -23,6 +23,14 @@
   }
 }
 
+@mixin hide-text() {
+  /* Zeldman's image replacement technique */
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+
 // ======
 // DRUPAL
 // ======
