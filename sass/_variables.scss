@@ -4,10 +4,11 @@
  * clr: color
  * dim: dimension
  * res: resolution/responsive
+ * bs:  browser support
  * ...
  */
 
-$ie-lt8: false; // If less than Internet Explorer 8
+$bs-ie-lt8: false; // If less or equal than Internet Explorer 8
 
 $clr-body:       #ffffff;
 $clr-link:       #cc0000;
