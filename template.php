@@ -22,4 +22,16 @@ function g_raph_js_alter(&$javascript) {
   $javascript['misc/jquery.js']['version'] = '1.9.1';
   $javascript['misc/jquery.js']['data'] = $jquery_path;
 }
+
+/**
+ * Add " ( Page # )" to html header title for SEO.
+ * So Google doesn't see the extra pages of views as duplicate content.
+ */
+
+function g_raph_preprocess_html(&$vars) {
+ if (isset($_GET['page']) && is_numeric($_GET['page']) && $_GET['page'] > 0){
+  $pager = t('Page @pager', array('@pager' => $_GET['page'] + 1));
+   $vars['head_title'] = $vars['head_title'] . ' (' . $pager . ')';
+ }
+}
 ?>
