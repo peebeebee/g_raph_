@@ -62,6 +62,22 @@
   }
 }
 
+// VERTICAL ALIGN MIDDLE FOR BLOCKS
+@mixin valign-middle($height) {
+  height: $height;
+  &:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -0.25em; //Adjusts for spacing
+  }
+  .middle {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
 // ==========
 // RESPONSIVE
 // ==========

@@ -445,6 +445,7 @@ th {
  * clr: color
  * dim: dimension
  * res: resolution/responsive
+ * bs:  browser support
  * ...
  */
 /**
