@@ -2,6 +2,41 @@
  * MIXINS
  */
 
+// =====
+// LISTS
+// =====
+@mixin list-reset {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+@mixin list-inline {
+  @include list-reset();
+  display: inline;
+  li {
+    display: inline;
+  }
+}
+
+@mixin list-inline-block {
+  @include list-reset();
+  display: inline-block;
+  li {
+    display: inline-block;
+  }
+}
+
+@mixin list-float {
+  @include list-reset();
+  display: block;
+  overflow: hidden;
+  li {
+    float: left;
+  }
+}
+
 
 
 // ======
@@ -23,13 +58,34 @@
   }
 }
 
+/**
+ * Zeldman's image replacement technique
+ */
 @mixin hide-text() {
-  /* Zeldman's image replacement technique */
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
 }
 
+/**
+ * Michael Czernow vertical align hack
+ */
+@mixin center-vertical($height) {
+  height: $height;
+  /* The ghost, nudged to maintain perfect centering */
+  &:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -0.25em; /* Adjusts for spacing */
+  }
+  /* The element to be centered, can also be of any width and height */
+  > * {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
 
 // ======
 // DRUPAL
